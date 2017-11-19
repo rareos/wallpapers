@@ -1,0 +1,14 @@
+Source: rareos-wallpapers
+Section: x11
+Priority: optional
+Maintainer: Kian Moretz <kian@orioncomputing.net>
+Build-Depends: debhelper (>= 10), imagemagick
+Standards-Version: 3.9.8
+Homepage: https://github.com/rareos/wallpapers
+Vcs-Git: https://github.com/rareos/wallpapers.git
+
+Package: rareos-wallpapers
+Architecture: all
+Provides: ubuntu-wallpapers
+Description: rareOS Wallpapers
+ A collection of wallpapers for rareOS
