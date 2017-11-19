@@ -14,16 +14,16 @@ clean:
 
 install: all
 	for file in $(SCALED); do \
-		install -D -m 0644 "$$file" "$(DESTDIR)$(datadir)/backgrounds/pop/$$(basename "$$file")"; \
+		install -D -m 0644 "$$file" "$(DESTDIR)$(datadir)/backgrounds/rareos/$$(basename "$$file")"; \
 	done
-	install -D -m 0644 "scaled/info.xml" "$(DESTDIR)$(datadir)/gnome-background-properties/pop-wallpapers.xml"
+	install -D -m 0644 "scaled/info.xml" "$(DESTDIR)$(datadir)/gnome-background-properties/rareos-wallpapers.xml"
 
 uninstall:
 	for file in $(SCALED); do \
 		rm -f "$(DESTDIR)$(datadir)/backgrounds/pop/$$(basename "$$file")"; \
 	done
-	rmdir --ignore-fail-on-non-empty "$(DESTDIR)$(datadir)/backgrounds/pop/"
-	rm -f "$(DESTDIR)$(datadir)/gnome-background-properties/pop-wallpapers.xml"
+	rmdir --ignore-fail-on-non-empty "$(DESTDIR)$(datadir)/backgrounds/rareos/"
+	rm -f "$(DESTDIR)$(datadir)/gnome-background-properties/rareos-wallpapers.xml"
 	rmdir --ignore-fail-on-non-empty "$(DESTDIR)$(datadir)/gnome-background-properties/"
 
 scaled/%: original/%
@@ -41,7 +41,7 @@ scaled/info.xml: $(SCALED)
 		name="$${filename%.*}"; \
 		echo "    <wallpaper>" >> "build/info.xml"; \
 		echo "        <name>$$name</name>" >> "build/info.xml"; \
-		echo "        <filename>/usr/share/backgrounds/pop/$$(basename "$$file")</filename>" >> "build/info.xml"; \
+		echo "        <filename>/usr/share/backgrounds/rareos/$$(basename "$$file")</filename>" >> "build/info.xml"; \
 		echo "        <options>zoom</options>" >> "build/info.xml"; \
 		echo "        <pcolor>#000000</pcolor>" >> "build/info.xml"; \
 		echo "        <scolor>#000000</scolor>" >> "build/info.xml"; \
