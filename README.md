@@ -22,4 +22,12 @@ Maciek Wrona <https://unsplash.com/photos/G2a16WQx_Bg>
 
 Danny Postma <https://unsplash.com/photos/XqtJY5gTo5k>
 
+Kalen Emsley <https://unsplash.com/photos/Bkci_8qcdvQ>
+
+Khara Woods <https://unsplash.com/photos/rmzFOhDrSog>
+
+Sam Goodgame <https://unsplash.com/photos/Pe5BC-EDtB4>
+
+Lorenzo Spoleti <https://unsplash.com/photos/oOUG44qznIk>
+
 The rareOS Default background is copyrighted by Orion Computing, LLC.
